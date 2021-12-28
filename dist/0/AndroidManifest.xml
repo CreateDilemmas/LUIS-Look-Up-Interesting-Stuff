@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0.0" android:versionCode="8" android:windowSoftInputMode="adjustPan" package="com.freesamplesus.myapp" android:installLocation="internalOnly">
+  <supports-screens android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:resizeable="true" android:anyDensity="true" android:smallScreens="true" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <application android:debuggable="false" android:hardwareAccelerated="true" android:icon="@com.freesamplesus.myapp:drawable/icon" android:label="@com.freesamplesus.myapp:string/app_name">
+    <activity android:screenOrientation="unspecified" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenSize" android:label="@com.freesamplesus.myapp:string/app_name" android:windowSoftInputMode="adjustUnspecified" android:name=".FreeSamples">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="@com.freesamplesus.myapp:string/app_name" android:name="com.phonegap.DroidGap">
+      <intent-filter />
+    </activity>
+    <activity android:name="com.plugin.gcm.PushHandlerActivity" />
+    <receiver android:name="com.plugin.gcm.CordovaGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="com.freesamplesus.myapp" />
+      </intent-filter>
+    </receiver>
+    <service android:name="com.plugin.gcm.GCMIntentService" />
+  </application>
+  <uses-sdk android:minSdkVersion="14" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <permission android:name="com.freesamplesus.myapp.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+  <uses-permission android:name="com.freesamplesus.myapp.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.RECORD_VIDEO" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
+  <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+</manifest>

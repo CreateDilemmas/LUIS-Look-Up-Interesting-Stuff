@@ -1,0 +1,13 @@
+[{
+    "regex": "(?i).*(C9D0A14B43B0798DC41F057CDB02FE09).*",
+    "criticality": "critical",
+	"label": "Functionality Check Passed",
+    "description": "Functionality Check",
+    "include_file_regex": ".java$"
+}, {
+    "regex": "(?i).*(custom_string).*",
+    "criticality": "high",
+	"label": "Custom String Found",
+    "description": "Placeholder_for_custom_string_grep",
+    "include_file_regex": ".java$"
+}]
