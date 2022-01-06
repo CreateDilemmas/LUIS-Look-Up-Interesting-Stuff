@@ -1,4 +1,4 @@
-# grep
+# Look Up Interesting Stuff - LUIS
 grep tool hack based on Super Android Analyzer
 
 This is a command-line application that can be used in Windows (*MacOS X and Linux can also be utilzed, see below*) that allows a user to grep for any string or regex within a file (named as a .java) that is put into /dist/0/.
