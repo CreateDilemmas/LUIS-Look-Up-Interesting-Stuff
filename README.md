@@ -11,4 +11,4 @@ The report consists of a functionality test (to determine if the software is wor
 The original project can be found here:
 https://github.com/SUPERAndroidAnalyzer/super
 
-*For Mac and Linux use, simply use the original project and replace the apk, the /templates directory and rules.json from this repo. You may wish to rename the super command to grep as well, though it is not required. 
+*For Mac and Linux use, simply use the original project and replace the apk, the /templates and /dist directory and rules.json from this repo. You may wish to rename the super command to grep as well, though it is not required. 
