@@ -1,3 +1,3 @@
 @echo off
-grep 0.apk
+grep --rules rules.json --bench --open 0.apk
 pause
